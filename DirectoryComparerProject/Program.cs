@@ -7,7 +7,7 @@ namespace DirectoryComparerProject
     {
         static void Main(string[] args)
         {
-            XmlDocument xml = DirectoryComparer.Compare(@"C:\NewPath", @"C:\NewPath2");
+            XmlDocument xml = DirectoryComparer.Compare(@"C:\New folder", @"C:\New folder (2)");
         }
     }
 }

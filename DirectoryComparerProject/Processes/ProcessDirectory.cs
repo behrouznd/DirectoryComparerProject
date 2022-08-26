@@ -50,8 +50,9 @@ namespace DirectoryComparerProject.Processes
                     if (!Directory.Exists(subdir.Replace(newDir, oldDir)))
                     {
                         processList.Add(new DirectoryProcess { TypeFile = TypeFile.dir, Path = subdir.Replace(_newPath,""), State = FileState.Create });
-
+                        Compare(subdir.Replace(newDir , oldDir), subdir, processList);
                     }
+                   
                 }
             }
 
